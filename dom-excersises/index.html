@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+        <h1>My Skill Tracker</h1>
+        <p>Add and search the skills you are learning.</p>
+
+        <form id="skill-form">
+            <input
+                type="text"
+                id="skill-input"
+                placeholder="Enter a skill"
+                aria-label="Enter a skill"
+                required
+            >
+            <button type="submit">Add Skill</button>
+        </form>
+
+        <input
+            type="search"
+            id="search-input"
+            placeholder="Search skills..."
+            aria-label="Search skills"
+        >
+
+        <h2>My Skills</h2>
+        <p id="skill-count" aria-live="polite"></p>
+
+        <ul id="skill-list"></ul>
+
+        <p id="message" aria-live="polite"></p>
+    </main>
+
+</body>
+</html>
