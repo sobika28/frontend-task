@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Academy - Tailwind</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900">
+
+    <nav class="bg-gray-900 text-white">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between gap-4">
+            <a href="#" class="text-xl font-bold">WebAcademy</a>
+
+            <div class="flex flex-wrap gap-5">
+                <a href="#home" class="text-gray-200 hover:text-white">Home</a>
+                <a href="#features" class="text-gray-200 hover:text-white">Features</a>
+                <a href="#contact" class="text-gray-200 hover:text-white">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="bg-blue-600 text-white text-center px-6 py-20">
+        <div class="max-w-3xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold">
+                Learn. Build. Grow.
+            </h1>
+
+            <p class="text-lg mt-5 text-blue-100">
+                Build your future with practical web development skills.
+            </p>
+
+            <a href="#features"
+               class="inline-block mt-7 bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg hover:bg-blue-50">
+                Explore Courses
+            </a>
+        </div>
+    </header>
+
+    <main id="features" class="max-w-6xl mx-auto px-6 py-14">
+        <h2 class="text-3xl font-bold text-center mb-8">
+            What You'll Learn
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <article class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+                <h3 class="text-xl font-bold">HTML & CSS</h3>
+                <p class="mt-3 text-gray-600 leading-7">
+                    Learn webpage structure, styling, layouts,
+                    and responsive design.
+                </p>
+            </article>
+
+            <article class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+                <h3 class="text-xl font-bold">JavaScript</h3>
+                <p class="mt-3 text-gray-600 leading-7">
+                    Make webpages interactive with events,
+                    DOM manipulation, and APIs.
+                </p>
+            </article>
+
+            <article class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+                <h3 class="text-xl font-bold">React</h3>
+                <p class="mt-3 text-gray-600 leading-7">
+                    Build reusable components and modern
+                    user interfaces.
+                </p>
+            </article>
+
+        </div>
+    </main>
+
+    <footer id="contact" class="bg-gray-900 text-white text-center px-6 py-6">
+        <p>© 2026 WebAcademy. Keep learning!</p>
+    </footer>
+
+</body>
+</html>
