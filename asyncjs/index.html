@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Posts Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+        <header>
+            <h1>Public Posts Explorer</h1>
+            <p>Fetch and explore posts from a public API.</p>
+        </header>
+
+        <button id="refresh-btn">Load Posts</button>
+
+        <p id="status" aria-live="polite">Ready to load posts.</p>
+
+        <section id="posts-container" class="posts-grid"
+                 aria-label="Posts">
+        </section>
+    </main>
+
+</body>
+</html>
