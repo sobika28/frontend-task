@@ -1,3 +1,4 @@
+
 const express = require("express");
 const router = express.Router();
 
@@ -9,10 +10,25 @@ const {
     deleteUser
 } = require("../controllers/userController");
 
+const {
+    validateUserId,
+    validateUserData,
+    checkValidation
+} = require("../validators/userValidator");
+
+// GET all users
 router.get("/", getUsers);
-router.get("/:id", getUserById);
-router.post("/", createUser);
-router.put("/:id", updateUser);
-router.delete("/:id", deleteUser);
+
+// GET one user
+router.get("/:id", validateUserId, checkValidation, getUserById);
+
+// CREATE a user
+router.post("/", validateUserData, checkValidation, createUser);
+
+// UPDATE a user
+router.put("/:id", validateUserId, validateUserData, checkValidation, updateUser);
+
+// DELETE a user
+router.delete("/:id", validateUserId, checkValidation, deleteUser);
 
 module.exports = router;
